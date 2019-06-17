@@ -12,7 +12,7 @@ Place.prototype.addPlace = function (place) {
 };
 
 Place.prototype.paragraphDisplay = function () {
-  return this.name + ' is located in ' + this.location + '.' + ' ' + this.notes + + " " +
+  return this.name + ' is located in ' + this.location + '.' + ' ' + this.notes +  " " +
   this.image;
   };
 
@@ -26,18 +26,13 @@ $(document).ready(function() {
   $('.formOne').submit(function(event) {
     event.preventDefault();
     console.log("here");
-    // $('#display').text("");
-    // $('#kimage').text("");
     $('#display').html(Korea.paragraphDisplay());
-    //$('#kimage').append(Korea.image);
   });
 });
 $(document).ready(function() {
   $('.formTwo').submit(function(event) {
     event.preventDefault();
     console.log("here");
-    // $('#display').text("");
-    // $('#kimage').text("");
     $('#display').html(LookoutTower.paragraphDisplay());
 
   });
