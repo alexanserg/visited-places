@@ -2,7 +2,7 @@
 <html>
 <head>
   <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
-  <script src="js.scripts.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Awesome Spots</title>
@@ -13,12 +13,19 @@
       <h1 class="display-4">I've been to some Awesome Spots</h1>
       <p class="lead">Let me tell you about these places</p>
       <hr class="my-4">
-      <p>Just take a good look at my pictures!</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <form class="formOne" action="index.html" method="post">
+          <button id="korea" type="submit" name="button">Gyeonggi-Do, South Korea</button>
+
+        </form>
+        <form class="formTwo" action="index.html" method="post">
+          <button id="oregon" type="submit" name="button">Indian Ridge Lookout Tower, Central Oregon Cascades</button>
+        </form>
       </p>
     </div>
-
+    <div class="display">
+      <p id="display"></p>
+    </div>
 
   </div>
 </body>
